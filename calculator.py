@@ -1,5 +1,8 @@
-import math
+# Repository Link: https://github.com/Fennekine14/lab10-AL-KM.git
+# Partner 1: Alejandro Leyva
+# Partner 2: Keon K. Moghaddam
 
+import math
 
 def add(a, b): 
     return a+b
@@ -26,13 +29,9 @@ def exp(a,b):
     return math.pow(a,b)
 
 def square_root(a):
-    try:
-        if a == 0:
-            raise ValueError('Square root of 0 is not defined')
-        return math.sqrt(a)
-    except ValueError as e:
-        print(f'Error: {e}')
-        return None
+    if a < 0:
+        raise ValueError('A must be greater than 0')
+    return math.sqrt(a)
 
 def hypotenuse(a, b):
     return math.hypot(a, b)
