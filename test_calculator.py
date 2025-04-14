@@ -33,6 +33,11 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(square_root(4), 2)
         self.assertEqual(square_root(9), 3)
 
+    def test_logarithm(self):
+        self.assertEqual(logarithm(8,2),3)
+        self.assertEqual(logarithm(9,3),2)
+        self.assertEqual(logarithm(100,10),2)
+
     def test_add(self): # 3 assertions
         self.assertEqual(add(1,4),5)
         self.assertEqual(add(6,10),16)
