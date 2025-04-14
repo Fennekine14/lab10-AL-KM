@@ -7,6 +7,19 @@ One function per operation, in order.
 
 import math
 
+
+def square_root(a):
+    try:
+        if a == 0:
+            raise ValueError('Square root of 0 is not defined')
+        return math.sqrt(a)
+    except ValueError as e:
+        print(f'Error: {e}')
+        return None
+
+def hypotenuse(a, b):
+    return math.hypot(a, b)
+
 def add(a, b):
     return a + b
 
