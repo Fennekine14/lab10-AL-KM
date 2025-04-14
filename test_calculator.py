@@ -1,5 +1,5 @@
 import unittest
-from calculator import add, sub, div, log
+from calculator import add, subtract, div, logarithm
 
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
@@ -27,8 +27,7 @@ class TestCalculator(unittest.TestCase):
         with self.assertRaises(ValueError):
             logarithm(100,0)
         with self.assertRaises(ValueError):
-            logarithm00
-            (2,-10)
+            logarithm(2,-10)
 
 
 # Do not touch this
