@@ -34,7 +34,7 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(square_root(9), 3)
 
     def test_logarithm(self):
-        self.assertEqual(logarithm(8,2),3)
+        self.assertEqual(logarithm(2,8),3)
         self.assertEqual(logarithm(9,3),2)
         self.assertEqual(logarithm(100,10),2)
 
